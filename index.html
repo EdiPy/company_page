@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="static/css/style.css">
 </head>
 <body>
   <header>
@@ -15,7 +15,7 @@
       <h1>Stemići</h1>
       <nav>
         <a href="#edukacije">Edukacije</a>
-        <a href="#blog">Blog</a>
+        <a href="#blog"">Blog</a>
         <a href="#onama">O nama</a>
         <a id="kontakt" href="#kontakt">Kontaktiraj nas</a>
       </nav>
@@ -53,7 +53,7 @@
     </div>
 
     <div class="card">
-        <div class="emoji"> <img src="microsoft.jpg" alt="PowerPlatforma img" height="40" width="40"></div>
+        <div class="emoji"> <img src="/static/img/microsoft.jpg" alt="PowerPlatforma img" height="40" width="40"></div>
         <h3>Microsoft Power Platform</h3>
         <p>Razvij poslovne aplikacije uz minimalno koda.</p>
     </div>
@@ -74,12 +74,47 @@
         <h3>Robotika i IoT</h3>
         <p>Poveži različite uređaje i složi svojeg robota!</p>
     </div>
-
-
-
-
   </section>
 
+  <section id="blog" class="blog-section">
+    <h2 class="blog-title">Najnovije priče iz svijeta tehnologije</h2>
+    <div class="blog-cards">
+      
+      <div class="blog-card">
+        <img src="./static/img/slika1.jpg" alt="Priča 1" width="50" height="50">
+        <h3>Kako je učenik naučio Python za 2 mjeseca</h3>
+        <p>Upoznajte Luku koji je uz naše radionice iz programiranja napravio svoju prvu igru.</p>
+        <a href="prica1.html">Pročitaj više</a>
+      </div>
+  
+      <div class="blog-card">
+        <img src="./static/img/slika2.jpg"  alt="Priča 2" width="50" height="50" >
+        <h3>Škola u Zagrebu koristi IoT u nastavi</h3>
+        <p>Učenici osnovne škole koriste senzore za mjerenje kvalitete zraka – uz pomoć STEM edukacije.</p>
+        <a href="prica2.html">Pročitaj više</a>
+      </div>
+  
+      <div class="blog-card">
+        <img src="./static/img/slika3.jpg"  alt="Priča 3" width="50" height="50">
+        <h3>Excel kao supermoć u svakodnevici</h3>
+        <p>Od budžeta do analiza – saznaj kako su polaznici digitalizirali svoje zadatke uz Excel.</p>
+        <a href="prica3.html">Pročitaj više</a>
+      </div>
+  
+      <div class="blog-card">
+        <img src="./static/img/slika4.png"  alt="Priča 4" width="50" height="50">
+        <h3>Djeca i umjetna inteligencija - spoj budućnosti</h3>
+        <p>Djeca uče prepoznati što je AI i kako ga koristiti odgovorno kroz interaktivne igre.</p>
+        <a href="prica4.html">Pročitaj više</a>
+      </div>
+  
+    </div>
+  
+    <div class="blog-button-wrapper">
+      <a href="sve-price.html" class="blog-button">Pogledaj sve priče</a>
+    </div>
+  </section>
+  
  
 
 </body>
