@@ -1,0 +1,150 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Josefin Sans";
+    background-color: #f9fafb;
+  }
+  
+  /* HEADER */
+  header {
+    background-color:#06374b;
+    position: static;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .nav-container {
+    margin: 0 auto;
+    padding: 30px; /* ← increased vertical and horizontal padding */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  h1 {
+    color: white;
+    font-size: 60px; /* ← increased font size */
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 30px;
+    padding: 20px; /* ← larger clickable area */
+    font-size: 26px;  /* ← increased text size */
+  }
+  
+  
+  nav a:hover {
+    color: #FBBF24;
+  }
+  
+  #kontakt {
+    background-color: #fa772e;
+    border-radius: 10%;
+    color: white;
+  }
+  
+  #kontakt:hover {
+    color: #fff;
+    background-color:#fa772e;
+  }
+  
+  /* HERO SECTION */
+    .hero-text {
+    text-align: center;
+    padding: 40px 20px;
+    font-size:xx-large;
+    background-color:#47a8bd;
+    color: white;
+    align-items: center;
+    }
+
+  
+  .hero-text h2 {
+    font-size: 44px;
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-top: 100px
+ ;
+  }
+
+  .hero-text p {
+    font-size: 28px;
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    margin-top: 20px;
+  }
+  
+  /* CARDS SECTION */
+  .cards-section {
+    max-width: 1200px;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    padding: 0 20px;
+  }
+  
+  .card {
+    background-color: white;
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: 0.3s ease;
+  }
+  
+  .card:hover {
+    box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+  }
+  
+  .card .emoji {
+    font-size: 36px;
+    margin-bottom: 15px;
+  }
+  
+  .card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #1F2937;
+  }
+  
+  .card p {
+    color: #4B5563;
+    font-size: 18px;
+  }
+  
+  @media (max-width: 768px) {
+    .nav-container {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 20px;
+    }
+  
+    nav {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      width: 100%;
+    }
+  
+    nav a {
+      margin-left: 0;
+      padding: 12px 0;
+      font-size: 20px;
+    }
+  
+    h1 {
+      font-size: 36px;
+      text-align: left;
+    }
+  }
+  
