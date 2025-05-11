@@ -276,3 +276,54 @@ nav a:hover {
     font-size: 16px;
   }
   
+  .contact-section {
+    max-width: 600px;
+    margin: 80px auto;
+    padding: 40px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+  
+  .form-container h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #06374b;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+  
+  .form-input,
+  .form-textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+  }
+  
+  .form-textarea {
+    resize: vertical;
+    height: 150px;
+  }
+  
+  .form-error {
+    color: red;
+    font-size: 14px;
+  }
+  
+  .flash-messages p {
+    color: green;
+    margin-top: 20px;
+    font-weight: bold;
+  }
+  
