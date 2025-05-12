@@ -7,6 +7,8 @@ import os
 app = Flask(__name__)
 
 load_dotenv()
+
+app.secret_key = os.getenv('SECRET_KEY')
 # Mail config
 app.config['MAIL_SERVER'] = 'smtp.gmail.com'
 app.config['MAIL_PORT'] = 587
