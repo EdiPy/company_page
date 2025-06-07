@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% block content %}
+<section style="padding: 5px;" class="hero-text">
+    <h2>Ne znaš što odabrati?</h2>
+<p>Edukacije i rješenja krojimo po potrebi klijenta</p>
+</section>
+<section class="contact-section">
+  <div class="form-container">
+    <h2>Kontaktiraj nas</h2>
+
+    <form method="POST">
+      {{ form.hidden_tag() }}
+
+      <div class="form-group">
+        {{ form.name.label }}
+        {{ form.name(class_="form-input") }}
+        {% for error in form.name.errors %}
+          <span class="form-error">{{ error }}</span>
+        {% endfor %}
+      </div>
+
+      <div class="form-group">
+        {{ form.email.label }}
+        {{ form.email(class_="form-input") }}
+        {% for error in form.email.errors %}
+          <span class="form-error">{{ error }}</span>
+        {% endfor %}
+      </div>
+
+      <div class="form-group">
+        {{ form.message.label }}
+        {{ form.message(class_="form-textarea") }}
+        {% for error in form.message.errors %}
+          <span class="form-error">{{ error }}</span>
+        {% endfor %}
+      </div>
+
+      {{ form.submit(class_="blog-button") }}
+    </form>
+
+    {% with messages = get_flashed_messages() %}
+      {% if messages %}
+        <div class="flash-messages">
+          {% for message in messages %}
+            <p>{{ message }}</p>
+          {% endfor %}
+        </div>
+      {% endif %}
+    {% endwith %}
+  </div>
+</section>
+{% endblock %}
+
+

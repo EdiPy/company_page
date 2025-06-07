@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+
+{% block title %}Python edukacija - Stemići{% endblock %}
+
+{% block content %}
+<section class="hero-course">
+  <div class="hero-course-inner">
+    <h1>Python edukacija</h1>
+    <p>Pokreni svoju karijeru učenjem jednog od najtraženijih jezika današnjice.</p>
+    <a href="{{ url_for('contact') }}" class="cta-button">Prijavi se</a>
+  </div>
+</section>
+
+<section class="course-section">
+  <div class="section-content">
+    <div class="text-content">
+      <h2>Što ćeš naučiti?</h2>
+      <ul class="course-list">
+        <li>Osnove programiranja u Pythonu</li>
+        <li>Analiza velikih skupova podataka</li>
+        <li>Uvjeti, petlje, funkcije i rad s datotekama</li>
+        <li>Uvod u rad s bibliotekama (pandas, matplotlib, selenium, Flask, FastAPI...)</li>
+        <li>Razvoj jednostavnih aplikacija, web stranica i igara</li>
+      </ul>
+    </div>
+    <div class="image-content">
+      <img src="{{ url_for('static', filename='img/python1.jpg') }}" alt="Python edukacija">
+    </div>
+  </div>
+</section>
+
+
+<section class="course-section alt">
+  <h2>Kome je edukacija namijenjena?</h2>
+  <p>
+    Edukacija je namijenjena početnicima, učenicima osnovnih i srednjih škola, roditeljima i svima
+    koji žele zakoračiti u svijet programiranja bez prethodnog iskustva.
+  </p>
+</section>
+
+<section class="course-section">
+  <h2>Trajanje i način rada</h2>
+  <p>
+    Trajanje, sadržaj, vrijeme i mjesto održavanja edukacije dogovoramo sa svakim klijentom zasebno kako bi edukacija bila upotpunosti prilagođena vašim potrebama
+  </p>
+</section>
+
+<section class="course-section alt">
+  <h2>Mentor</h2>
+  <p>
+    Vaš mentor bit će iskusni edukator s višegodišnjim iskustvom u radu s djecom i mladima te znanjem iz industrije.
+  </p>
+</section>
+
+<section class="course-cta">
+  <h2>Spreman za novi početak?</h2>
+  <a href="{{ url_for('contact') }}" class="cta-button large">Prijavi se na Python edukaciju</a>
+</section>
+{% endblock %}

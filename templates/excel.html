@@ -1,0 +1,94 @@
+{% extends "base.html" %}
+
+{% block title %}Excel edukacija - Stemići{% endblock %}
+
+{% block content %}
+<section class="hero-course">
+  <div class="hero-course-inner section-content">
+    <div class="text-content">
+      <h1>Excel edukacija</h1>
+      <p>Excel otvara vrata produktivnosti, analizi i automatizaciji zadataka.</p>
+      <a href="{{ url_for('contact') }}" class="cta-button">Prijavi se</a>
+    </div>
+  </div>
+</section>
+
+<section class="course-section">
+  <div class="section-content">
+    <div class="image-content">
+      <img src="{{ url_for('static', filename='img/excel_osnovno.jpg') }}" alt="Početni Excel">
+     </div>
+    <div class="text-content">
+
+      <h2>Što ćeš naučiti - Početni Excel</h2>
+      <ul class="course-list">
+        <li>Unos i uređivanje podataka</li>
+        <li>Formatiranje ćelija, redova i stupaca</li>
+        <li>Osnovne formule i funkcije (SUM, AVERAGE, IF...)</li>
+        <li>Sortiranje i filtriranje podataka</li>
+        <li>Korištenje tablica i osnovnih grafikona</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<section class="course-section alt">
+  <div class="section-content">
+    <div class="text-content">
+      <h2>Što ćeš naučiti - Napredni Excel</h2>
+      <ul class="course-list">
+        <li>Napredne funkcije (VLOOKUP, INDEX/MATCH, IFERROR...)</li>
+        <li>Pivot tablice i napredna analiza podataka</li>
+        <li>Uvjetno formatiranje</li>
+        <li>Rad s velikim skupovima podataka</li>
+        <li>Uvod u makronaredbe (VBA)</li>
+      </ul>
+    </div>
+    <div class="image-content">
+      <img src="{{ url_for('static', filename='img/excel_napredno.jpg') }}" alt="Napredni Excel">
+    </div>
+  </div>
+</section>
+
+<section class="course-section">
+  <div class="section-content">
+    <div class="text-content">
+      <h2>Kome je edukacija namijenjena?</h2>
+      <p>
+        Edukacija je idealna za učenike, studente, zaposlenike, poduzetnike i sve koji žele poboljšati
+        svoje vještine rada u Excelu – bez obzira na trenutno znanje.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="course-section alt">
+  <div class="section-content">
+    <div class="text-content">
+      <h2>Trajanje i način rada</h2>
+      <p>
+        Program traje 2 mjeseca. Predavanja se održavaju jednom tjedno po 2 sata – uživo ili online.
+        Svi polaznici dobit će pristup snimkama, vježbama i materijalima.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="course-section">
+  <div class="section-content">
+    <div class="text-content">
+      <h2>Mentor</h2>
+      <p>
+        Iskusni mentor s dugogodišnjim radom u Excelu u poslovnim i obrazovnim okruženjima vodit će vas
+        kroz svaki korak učenja – uz praktične primjere i podršku.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="course-cta">
+  <h2>Spreman za napredak?</h2>
+  <a href="{{ url_for('contact') }}" class="cta-button large">Prijavi se na Excel edukaciju</a>
+</section>
+{% endblock %}

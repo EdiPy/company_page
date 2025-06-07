@@ -1,0 +1,91 @@
+{% extends "base.html" %}
+
+{% block title %}Power BI edukacija - Stemići{% endblock %}
+
+{% block content %}
+<section class="hero-course">
+  <div class="hero-course-inner section-content">
+    <div class="text-content">
+      <h1>Power BI edukacija</h1>
+      <p>Vizualiziraj podatke kao profesionalac i donosi bolje odluke uz Power BI.</p>
+      <a href="{{ url_for('contact') }}" class="cta-button">Prijavi se</a>
+    </div>
+  </div>
+</section>
+
+<section class="course-section">
+  <div class="section-content">
+    <div class="image-content">
+      <img src="{{ url_for('static', filename='img/pbi_osnovno.jpg') }}" alt="Početni Power BI">
+    </div>
+    <div class="text-content">
+      <h2>Što ćeš naučiti – Početni Power BI</h2>
+      <ul class="course-list">
+        <li>Uvod u Power BI i korisničko sučelje</li>
+        <li>Uvoz i čišćenje podataka (Power Query)</li>
+        <li>Osnovno modeliranje podataka</li>
+        <li>Izrada interaktivnih izvještaja i vizualizacija</li>
+        <li>Dijeljenje izvještaja putem Power BI servisa</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<section class="course-section alt">
+  <div class="section-content">
+    <div class="text-content">
+      <h2>Što ćeš naučiti – Napredni Power BI</h2>
+      <ul class="course-list">
+        <li>DAX formule i mjere</li>
+        <li>Napredno modeliranje podataka</li>
+        <li>Parametri i what-if analize</li>
+        <li>Optimizacija performansi modela</li>
+        <li>Integracija s drugim alatima (Excel, SQL, Web)</li>
+      </ul>
+    </div>
+    <div class="image-content">
+      <img src="{{ url_for('static', filename='img/pbi_napredno.jpg') }}" alt="Napredni Power BI">
+    </div>
+  </div>
+</section>
+
+<section class="course-section">
+  <div class="section-content">
+    <div class="text-content">
+      <h2>Kome je edukacija namijenjena?</h2>
+      <p>
+        Namijenjena je analitičarima, ekonomistima, studentima, menadžerima i svima koji žele pretvoriti podatke u uvide – bez potrebe za programiranjem.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="course-section alt">
+  <div class="section-content">
+    <div class="text-content">
+      <h2>Trajanje i način rada</h2>
+      <p>
+        Edukacija traje 2 mjeseca – 1 susret tjedno po 2 sata, uz dostupne snimke, zadatke i radne materijale.
+        Moguće pohađanje uživo ili online.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="course-section">
+  <div class="section-content">
+    <div class="text-content">
+      <h2>Mentor</h2>
+      <p>
+        Edukaciju vodi certificirani Power BI stručnjak s iskustvom u poslovnoj analitici, radu s tvrtkama i vođenju edukacija.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="course-cta">
+  <h2>Vrijeme je za analitički iskorak</h2>
+  <a href="{{ url_for('contact') }}" class="cta-button large">Prijavi se na Power BI edukaciju</a>
+</section>
+{% endblock %}
