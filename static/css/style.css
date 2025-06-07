@@ -99,7 +99,7 @@ nav a:hover {
   /* CARDS SECTION */
     .cards-section {
       display: grid;
-      grid-template-columns: repeat(4, 1fr); /* exactly 4 columns */
+      grid-template-columns: repeat(3, 1fr); /* exactly 4 columns */
       gap: 30px;
       max-width: 1400px; /* optional: make container wider */
       margin: 80px auto;

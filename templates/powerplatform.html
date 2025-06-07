@@ -1,0 +1,91 @@
+{% extends "base.html" %}
+
+{% block title %}Power Platform edukacija - Stemići{% endblock %}
+
+{% block content %}
+<section class="hero-course">
+  <div class="hero-course-inner section-content">
+    <div class="text-content">
+      <h1>Power Platform edukacija</h1>
+      <p>Napravi svoje aplikacije i automatiziraj procese uz minimalno koda.</p>
+      <a href="{{ url_for('contact') }}" class="cta-button">Prijavi se</a>
+    </div>
+
+  </div>
+</section>
+
+<section class="course-section">
+  <div class="section-content">
+    <div class="image-content">
+        <img src="{{ url_for('static', filename='img/powerapps.jpg') }}" alt="Power Apps">
+    </div>
+    <div class="text-content">
+      <h2>Power Apps - izrada poslovnih aplikacija</h2>
+      <ul class="course-list">
+        <li>Kreiranje poslovnih aplikacija uz minimalno koda</li>
+        <li>Korištenje konektora za povezivanje s podacima (SharePoint, Excel, Dataverse...)</li>
+        <li>Izrada korisničkog sučelja (UI/UX)</li>
+        <li>Objava i korištenje aplikacija u stvarnom poslovanju</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<section class="course-section alt">
+  <div class="section-content">
+    <div class="text-content">
+      <h2>Power Automate - automatizacija poslovnih procesa</h2>
+      <ul class="course-list">
+        <li>Uvod u tokove (flows): automatski, ručni i planirani</li>
+        <li>Automatizacija svakodnevnih zadataka (email, dokumenti, obavijesti)</li>
+        <li>Povezivanje različitih aplikacija i servisa</li>
+        <li>Rad s uvjetima, petljama i varijablama</li>
+        <li>Napredno rukovanje greškama i sigurnošću</li>
+      </ul>
+    </div>
+    <div class="image-content">
+      <img src="{{ url_for('static', filename='img/power_platform.jpg') }}" alt="Power Automate">
+    </div>
+  </div>
+</section>
+
+<section class="course-section">
+  <div class="section-content">
+    <div class="text-content">
+      <h2>Kome je edukacija namijenjena?</h2>
+      <p>
+        Namijenjena je zaposlenicima, analitičarima, nastavnicima, HR-u i svima koji žele digitalizirati i
+        automatizirati svoj posao uz minimalno pisanje koda.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="course-section alt">
+  <div class="section-content">
+    <div class="text-content">
+      <h2>Trajanje i način rada</h2>
+      <p>
+        Edukacija traje 5 tjedana, s jednim predavanjem tjedno (2 sata), uživo ili online.
+        Polaznici dobivaju pristup snimkama, demo aplikacijama i dokumentaciji.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="course-section">
+  <div class="section-content">
+    <div class="text-content">
+      <h2>Mentor</h2>
+      <p>
+        Mentor je Microsoft Power Platform specijalist s iskustvom u implementaciji rješenja u stvarnim poslovnim procesima, edukaciji i konzultacijama.
+      </p>
+  </div>
+</section>
+
+<section class="course-cta">
+  <h2>Počni graditi svoje aplikacije i automatizacije</h2>
+  <a href="{{ url_for('contact') }}" class="cta-button large">Prijavi se na Power Platform edukaciju</a>
+</section>
+{% endblock %}

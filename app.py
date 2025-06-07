@@ -53,6 +53,10 @@ def excel():
 def pbi():
     return render_template("pbi.html")
 
+@app.route("/powerplatform")
+def powerplatform():
+    return render_template("powerplatform.html")
+
 
 if __name__ == "__main__":
     app.jinja_env.auto_reload = True
