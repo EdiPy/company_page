@@ -26,6 +26,14 @@ def index():
     return render_template("index.html")
 
 
+@app.route("/edukacije")
+def edukacije():
+    return render_template("edukacije.html")
+
+@app.route("/rjesenja")
+def rjesenja():
+    return render_template("rjesenja.html")
+
 @app.route("/contact", methods=["GET", "POST"])
 def contact():
     form = ContactForm()
@@ -57,6 +65,9 @@ def pbi():
 def powerplatform():
     return render_template("powerplatform.html")
 
+@app.route("/ai")
+def ai():
+    return render_template("ai.html")
 
 if __name__ == "__main__":
     app.jinja_env.auto_reload = True

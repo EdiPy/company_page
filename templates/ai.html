@@ -1,0 +1,83 @@
+{% extends "base.html" %}
+
+{% block title %}AI edukacija - Stemići{% endblock %}
+
+{% block content %}
+<section class="hero-course">
+  <div class="hero-course-inner section-content">
+    <div class="text-content">
+      <h1>Umjetna inteligencija (AI) edukacija</h1>
+      <p>Nauči kako funkcionira AI i izradi vlastite pametne aplikacije</p>
+      <a href="{{ url_for('contact') }}" class="cta-button">Prijavi se</a>
+    </div>
+  </div>
+</section>
+
+<section class="course-section">
+  <div class="section-content">
+    <div class="text-content">
+      <h2>Što ćeš naučiti?</h2>
+      <ul class="course-list">
+        <li>Uvod u umjetnu inteligenciju i strojno učenje</li>
+        <li>Osnove rada s podacima (Python, Pandas, NumPy)</li>
+        <li>Treniranje jednostavnih modela (regresija, klasifikacija)</li>
+        <li>Primjena AI-a u stvarnim problemima (prepoznavanje slika, chatbotovi...)</li>
+        <li>Etika i odgovorno korištenje AI tehnologija</li>
+      </ul>
+    </div>
+    <div class="image-content">
+      <img src="{{ url_for('static', filename='images/ai-topics.jpg') }}" alt="AI teme">
+    </div>
+  </div>
+</section>
+
+<section class="course-section alt">
+  <div class="section-content">
+    <div class="text-content">
+      <h2>Kome je edukacija namijenjena?</h2>
+      <p>
+        Edukacija je idealna za srednjoškolce, studente, nastavnike i entuzijaste koji žele razumjeti AI,
+        bez obzira na predznanje u programiranju.
+      </p>
+    </div>
+    <div class="image-content">
+      <img src="{{ url_for('static', filename='images/ai-users.jpg') }}" alt="Polaznici AI edukacije">
+    </div>
+  </div>
+</section>
+
+<section class="course-section">
+  <div class="section-content">
+    <div class="text-content">
+      <h2>Trajanje i način rada</h2>
+      <p>
+        Program traje 6 tjedana, uz tjedne interaktivne radionice (2 sata) i projekte. Pristup online platformi,
+        materijalima i podršci mentora uključen.
+      </p>
+    </div>
+    <div class="image-content">
+      <img src="{{ url_for('static', filename='images/ai-duration.jpg') }}" alt="Trajanje AI edukacije">
+    </div>
+  </div>
+</section>
+
+<section class="course-section alt">
+  <div class="section-content">
+    <div class="text-content">
+      <h2>Mentor</h2>
+      <p>
+        Mentori su AI stručnjaci s iskustvom u industriji i edukaciji. Uče kroz primjere, objašnjavaju složene koncepte jednostavno
+        i vode te do tvoje prve AI aplikacije.
+      </p>
+    </div>
+    <div class="image-content">
+      <img src="{{ url_for('static', filename='images/ai-mentor.jpg') }}" alt="AI mentor">
+    </div>
+  </div>
+</section>
+
+<section class="course-cta">
+  <h2>Započni svoje AI putovanje već danas</h2>
+  <a href="{{ url_for('contact') }}" class="cta-button large">Prijavi se na AI edukaciju</a>
+</section>
+{% endblock %}

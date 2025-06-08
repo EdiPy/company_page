@@ -5,31 +5,54 @@
 
 {% block content %}
 <section class="hero-text">
-  <h2>Digitalna rješenja i edukacije za budućnost</h2>
-  <p>Biraj između poslovnih edukacija ili gotovih rješenja za tvoju organizaciju.</p>
+  <h2>Želiš sigurniju budućnost za sebe i svoju djecu?</h2>
+  <p>Nudimo ti edukacije iz vještina budućnosti!</p>
 </section>
 
 <section class="cards-section" id="edukacije">
-  <a href="{{ url_for('edukacije') }}">
+  <a href="{{ url_for('python') }}">
     <div class="card">
-      <div class="emoji">📘</div>
-      <h3>Poslovne edukacije</h3>
-      <p>Razvij vještine budućnosti uz naše praktične radionice.</p>
+      <div class="emoji">🐍</div>
+      <h3>Python</h3>
+      <p>Nauči osnove programiranja i analize podataka</p>
     </div>
   </a>
 
-  <a href="{{ url_for('rjesenja') }}">
+  <a href="{{ url_for('excel') }}">
     <div class="card">
-      <div class="emoji">💡</div>
-      <h3>Gotova rješenja</h3>
-      <p>Implementiraj provjerena digitalna rješenja u svom poslovanju.</p>
+      <div class="emoji">📊</div>
+      <h3>Excel</h3>
+      <p>Naučite upravljati tabličnim podacima u Excelu</p>
     </div>
   </a>
 
-  
+  <a href="{{ url_for('pbi') }}">
+    <div class="card">
+      <div class="emoji">📈</div>
+      <h3>Power BI</h3>
+      <p>Vizualiziraj podatke i kreiraj dinamične izvještaje</p>
+    </div>
+  </a>
+
+  <a href="{{ url_for('powerplatform') }}">
+    <div class="card">
+      <div class="emoji"><img src="{{ url_for('static', filename='img/microsoft.jpg') }}" alt="PowerPlatforma img" height="40" width="40"></div>
+      <h3>Microsoft Power Platform</h3>
+      <p>Razvij poslovne aplikacije uz minimalno koda</p>
+    </div>
+  </a>  	
+
+  <a href="{{ url_for('ai') }}">
+  <div class="card">
+    <div class="emoji">🤖</div>
+    <h3>Umjetna inteligencija - AI</h3>
+    <p>Otkrij što stoji u pozadini ChatGPT-a!</p>
+  </div>
+  </a> 
+
   <div class="card">
     <div class="emoji">🛜</div>
-    <h3>Edukacije i instrukcije za djecu</h3>
+    <h3>Robotika za djecu</h3>
     <p>Poveži različite uređaje i složi svojeg robota!</p>
   </div>
 </section>
@@ -69,5 +92,3 @@
 
 </section>
 {% endblock %}
-
-  
