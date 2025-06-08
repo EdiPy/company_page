@@ -1,0 +1,94 @@
+<!-- templates/index.html -->
+{% extends "base.html" %}
+
+{% block title %}Početna - Stemići{% endblock %}
+
+{% block content %}
+<section class="hero-text">
+  <h2>Digitalizacija i automatizacija poslovnih procesa</h2>
+  <p>Obavljamo besplatnu analizu trenutnog stanja i izrađujemo gotova aplikativna rješenja prema vašiim potrebama</p>
+</section>
+
+<section class="cards-section" id="edukacije">
+  <a href="{{ url_for('python') }}">
+    <div class="card">
+      <div class="emoji">🐍</div>
+      <h3>Python</h3>
+      <p>Nauči osnove programiranja i analize podataka</p>
+    </div>
+  </a>
+
+  <a href="{{ url_for('excel') }}">
+    <div class="card">
+      <div class="emoji">📊</div>
+      <h3>Excel</h3>
+      <p>Naučite upravljati tabličnim podacima u Excelu</p>
+    </div>
+  </a>
+
+  <a href="{{ url_for('pbi') }}">
+    <div class="card">
+      <div class="emoji">📈</div>
+      <h3>Power BI</h3>
+      <p>Vizualiziraj podatke i kreiraj dinamične izvještaje</p>
+    </div>
+  </a>
+
+  <a href="{{ url_for('powerplatform') }}">
+    <div class="card">
+      <div class="emoji"><img src="{{ url_for('static', filename='img/microsoft.jpg') }}" alt="PowerPlatforma img" height="40" width="40"></div>
+      <h3>Microsoft Power Platform</h3>
+      <p>Razvij poslovne aplikacije uz minimalno koda</p>
+    </div>
+  </a>  	
+
+  <a href="{{ url_for('ai') }}">
+  <div class="card">
+    <div class="emoji">🤖</div>
+    <h3>Umjetna inteligencija - AI</h3>
+    <p>Otkrij što stoji u pozadini ChatGPT-a!</p>
+  </div>
+  </a> 
+
+  <div class="card">
+    <div class="emoji">🛜</div>
+    <h3>Robotika za djecu</h3>
+    <p>Poveži različite uređaje i složi svojeg robota!</p>
+  </div>
+</section>
+
+<section id="blog" class="blog-section">
+  <h2 class="blog-title">Najnovije priče iz svijeta tehnologije</h2>
+  <div class="blog-cards">
+    <div class="blog-card">
+      <img src="{{ url_for('static', filename='img/slika1.jpg') }}" alt="Priča 1" width="50" height="50">
+      <h3>Kako je učenik naučio Python za 2 mjeseca</h3>
+      <p>Upoznajte Luku koji je uz naše radionice iz programiranja napravio svoju prvu igru.</p>
+      <a href="prica1.html">Pročitaj više</a>
+    </div>
+    <div class="blog-card">
+      <img src="{{ url_for('static', filename='img/slika2.jpg') }}" alt="Priča 2" width="50" height="50">
+      <h3>Škola u Zagrebu koristi IoT u nastavi</h3>
+      <p>Učenici osnovne škole koriste senzore za mjerenje kvalitete zraka – uz pomoć STEM edukacije.</p>
+      <a href="prica2.html">Pročitaj više</a>
+    </div>
+    <div class="blog-card">
+      <img src="{{ url_for('static', filename='img/slika3.jpg') }}" alt="Priča 3" width="50" height="50">
+      <h3>Excel kao supermoć u svakodnevici</h3>
+      <p>Od budžeta do analiza - saznaj kako su polaznici digitalizirali svoje zadatke uz Excel.</p>
+      <a href="prica3.html">Pročitaj više</a>
+    </div>
+    <div class="blog-card">
+      <img src="{{ url_for('static', filename='img/slika4.png') }}" alt="Priča 4" width="50" height="50">
+      <h3>Djeca i umjetna inteligencija - spoj budućnosti</h3>
+      <p>Djeca uče prepoznati što je AI i kako ga koristiti odgovorno kroz interaktivne igre.</p>
+      <a href="prica4.html">Pročitaj više</a>
+    </div>
+  </div>
+
+  <div class="blog-button-wrapper">
+    <a href="sve-price.html" class="blog-button">Pogledaj sve priče</a>
+  </div>
+
+</section>
+{% endblock %}

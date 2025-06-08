@@ -5,37 +5,50 @@
 
 {% block content %}
 <section class="hero-text">
-  <h2>Digitalna rješenja i edukacije za budućnost</h2>
-  <p>Biraj između poslovnih edukacija ili gotovih rješenja za tvoju organizaciju.</p>
+  <h2>Uštedi vrijeme i novac digitalizacijom i automatizacijom poslovnih procesa</h2>
+  <p>Biraj između poslovnih edukacija ili gotovih rješenja za tvoju organizaciju
+  </p>
 </section>
 
 <section class="cards-section" id="edukacije">
   <a href="{{ url_for('edukacije') }}">
     <div class="card">
-      <div class="emoji">📘</div>
+      <!--<div class="emoji">📘</div>-->
       <h3>Poslovne edukacije</h3>
-      <p>Razvij vještine budućnosti uz naše praktične radionice.</p>
+      <p>Digitalna transformacija počinje znanjem.
+        Vodimo vas kroz konkretne poslovne izazove.
+        Naše edukacije su jasne, praktične i primjenjive.
+        Potičemo timski rad i kritičko razmišljanje.
+        Rezultat: sigurni koraci prema stvarnom uspjehu. </p>
     </div>
   </a>
 
   <a href="{{ url_for('rjesenja') }}">
     <div class="card">
-      <div class="emoji">💡</div>
-      <h3>Gotova rješenja</h3>
-      <p>Implementiraj provjerena digitalna rješenja u svom poslovanju.</p>
+      <!--<div class="emoji">💡</div>-->
+      <h3>IT usluge</h3>
+      <p>Procjenjujemo vašu trenutnu digitalnu spremnost
+        i predlažemo konkretna, primjenjiva rješenja.
+        Naš tim pokriva širok spektar IT usluga,
+        od infrastrukture do sigurnosti. 
+        Digitalna podrška prilagođena baš vama. </p>
     </div>
   </a>
 
   
   <div class="card">
-    <div class="emoji">🛜</div>
-    <h3>Edukacije i instrukcije za djecu</h3>
-    <p>Poveži različite uređaje i složi svojeg robota!</p>
+    <!--<div class="emoji">🛜</div>-->
+    <h3>Edukacije i za djecu</h3>
+    <p>Učimo djecu modernim tehnologijama. <br>
+      Programiranje, robotika, AI i više. <br>
+      Instrukcije iz tehničkih predmeta. <br>
+      Razvijamo logiku i digitalne vještine. <br>
+      Znanje za bolju i sigurniju budućnost.</p>
   </div>
 </section>
 
 <section id="blog" class="blog-section">
-  <h2 class="blog-title">Najnovije priče iz svijeta tehnologije</h2>
+  <h2 class="blog-title">Uspješne priče digitalnog doba!</h2>
   <div class="blog-cards">
     <div class="blog-card">
       <img src="{{ url_for('static', filename='img/slika1.jpg') }}" alt="Priča 1" width="50" height="50">
